@@ -21,4 +21,19 @@ int main()
     cout << "A maioria das compras foi em dinheiro, cartao ou boleto (D/C/B)?";
     cin >> Pagamento;
 
+    if(compras==0 && ticket == 0){
+        volumedc = 0;
+    }
+    else if(compras<=2 && ticket >0 && ticket<= 3000 ){
+        volumedc=20;
+    }
+    else if(compras>2 && ticket >0 && ticket<= 3000 ){
+        volumedc=40;
+    }
+    else if(ticket> 3000 ){
+        volumedc=60;
+    }
+    cout << "Score de volume de compras = " << volumedc << " pontos" << endl;
+
+
 }
