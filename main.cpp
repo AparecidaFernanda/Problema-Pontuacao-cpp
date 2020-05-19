@@ -10,4 +10,12 @@ int main()
     cout << "SISTEMA DE PERFIL DE CLIENTE" << endl;
     cout << "------------------------------------------------------" << endl;
     cout << "INFORME SEUS DADOS DO ULTIMO ANO" << endl;
+
+    cout << "Quantas compras o cliente fez no ultimo ano?";
+    cin >> compras;
+    cout << "Qual o ticket medio?";
+    cin >> ticket
+
+
+    if(compras)
 }
