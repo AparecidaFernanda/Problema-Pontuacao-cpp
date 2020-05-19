@@ -35,5 +35,26 @@ int main()
     }
     cout << "Score de volume de compras = " << volumedc << " pontos" << endl;
 
+    if(atraso>1 || compras==0){
+        inadim=0;
+    }
+    else if(compras>0 && atraso == 1){
+        inadim=15;
+    }
+    else if(compras>0 && atraso == 0){
+        inadim=30;
+    }
+
+    if (Pagamento=="D"){
+        form=5;
+    }
+    else{
+        form=10;
+    }
+
+    cout << "Score de inadimplencia = " << inadim << " pontos" << endl;
+    cout << "Score de forma de pagamento = " << form << " pontos" << endl;
+
+
 
 }
