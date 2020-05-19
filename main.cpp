@@ -55,6 +55,16 @@ int main()
     cout << "Score de inadimplencia = " << inadim << " pontos" << endl;
     cout << "Score de forma de pagamento = " << form << " pontos" << endl;
 
+    total=form+inadim+volumedc;
+    if(total>=0 && total<=25){
+        cout << "Classificação final = CLIENTE BRONZE"<< endl;
+    }
+    else if(total>25 && total<=75){
+        cout << "Classificação final = CLIENTE PRATA"<< endl;
+    }
+    else if(total>75){
+        cout << "Classificação final = CLIENTE OURO"<<endl;
+    }
 
 
 }
